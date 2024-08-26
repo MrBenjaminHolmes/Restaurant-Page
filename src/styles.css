@@ -1,0 +1,10 @@
+/* styles.css */
+body {
+    background-color: rgb(231, 228, 224);
+  }
+  
+header{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
