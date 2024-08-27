@@ -1,5 +1,6 @@
 import "./styles.css";
 import renderHomepage from "./pages/homePage.js";
+import renderFooter from "./pages/footer.js"
 
 function clearContent() {
     // const content = document.querySelector("#content");
@@ -9,8 +10,7 @@ function clearContent() {
 }
 
 
-
-renderHomepage();
+renderFooter();
 // import burger from './images/burger.png';
 
    

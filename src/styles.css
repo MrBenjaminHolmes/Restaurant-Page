@@ -20,6 +20,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  min-width: 850px;
   background-color: var(--background);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -49,22 +50,22 @@ nav{
   width: 100%;
 }
 
-button{
+nav>button{
   border: none;
   background-color: var(--background);
   transition: all 0.3s ease-in-out;
-  font-size: 3rem;
+  font-size: 3vw;
   color:var(--textColour);
 }
 
 
-button:hover {
+nav>button:hover {
   color: #ffffff;
   background-color: var(--background);
   transform: scale(1.5);
 }
 
-button::before {
+nav>button::before {
   content: "";
   position: absolute;
   display: block;
@@ -77,13 +78,13 @@ button::before {
   transition: transform 0.3s ease;
 }
 
-button:hover::before {
+nav>button:hover::before {
   transform: scaleX(1);
 }
 
 img{
-  width:45% ;
-  height: 45%;
+  width:45vmax;
+  height: 45vmax;
   transition: transform 0.3s ease;
 }
 
@@ -97,8 +98,81 @@ img:hover{
 
 .info{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 50%;
-  font-size: 4rem;
+  font-size: 3.5vw;
   margin-top: 6%;
+}
+
+.info>button{
+  border-radius: 40px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+  border: 2px solid;
+  color: var(--background);
+  transition: all 0.3s ease;
+}
+
+.info>button:hover{
+  box-shadow: 0 4px 8px 0 rgba(20, 20, 20, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.521);
+  transform: scale(1.05);
+}
+
+footer {
+  width: 100%;
+  background-color: var(--textColour);
+  color: var(--background);
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.copywright{
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+.container,.copywright{
+  display: flex;
+  background-color: var(--textColour);
+  color: var(--background);
+}
+
+.container{
+  padding-bottom: 8px;
+}
+
+.about{
+  width: 65%;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.about>h2{
+  color:var(--background);
+}
+
+.about>p{
+  color: #c0c0bb;
+}
+
+.pages>h2,.contact>h2{
+  color: var(--background);
+  margin-left: 90px;
+  padding: 10px;
+}
+.pages>ul>li,.contact>ul>li{
+  color: #c0c0bb;
+  margin-left: 100px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  transition: all 0.3s ease; 
+}
+
+.pages>ul>li:hover,.contact>ul>li:hover{
+  transform: scale(1.1);
 }
