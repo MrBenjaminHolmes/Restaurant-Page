@@ -8,4 +8,15 @@ function clearContent() {
     } 
 }
 
+
+
 renderHomepage();
+// import burger from './images/burger.png';
+
+   
+// const image = document.createElement("img");
+// image.src = burger;
+   
+// document.body.appendChild(image);
+
+
