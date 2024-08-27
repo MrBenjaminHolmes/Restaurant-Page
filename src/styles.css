@@ -96,20 +96,22 @@ img:hover{
   display: flex;
 }
 
-.info{
+.info {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
   font-size: 3.5vw;
-  margin-top: 6%;
+  margin-top: 3%;
+  text-align: center; 
+  
 }
+
 
 .info>button{
   border-radius: 40px;
-  margin-top: 20px;
   padding: 10px;
-  font-size: 3rem;
+  font-size: 3vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
   border: 2px solid;
   color: var(--background);
@@ -175,4 +177,34 @@ footer {
 
 .pages>ul>li:hover,.contact>ul>li:hover{
   transform: scale(1.1);
+}
+
+.info>p{
+  font-size: 40%;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.promos{
+  display: flex;
+  align-items: center;
+}
+
+#Taco{
+  width:16vmax;
+  height: 11vmax;
+}
+
+.promos>img{
+  width:16vmax;
+  height: 16vmax;
+}
+
+#tacot{
+  font-size: 2vw;
+}
+
+#promoText{
+  font-size: 3vw;
 }

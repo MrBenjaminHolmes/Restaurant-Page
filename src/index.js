@@ -10,7 +10,12 @@ function clearContent() {
 }
 
 
+
+
+renderHomepage();
 renderFooter();
+
+
 // import burger from './images/burger.png';
 
    
