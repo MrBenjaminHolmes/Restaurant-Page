@@ -4,11 +4,16 @@
 
 
  :root{
-  --background:#df7a7a;
+  --background:#db8d8d;
   --textColour:#f3eaea;
  }
 *{
-  font-family:sans-serif;
+  font-family: "New Amsterdam", sans-serif; 
+  margin: 0;
+  padding: 0;
+  color: var(--textColour);
+  box-sizing: border-box;
+
 }
 
 html, body {
@@ -20,6 +25,7 @@ html, body {
 }
 
 header{
+  margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -28,7 +34,7 @@ header{
 h1{
   color:var(--textColour);
   margin-left: 50px;
-  font-size: 3rem;
+  font-size: 4rem;
   transition: all 0.3s ease-in-out;
   font-family: "Matemasie", sans-serif;
 }
@@ -45,10 +51,9 @@ nav{
 
 button{
   border: none;
-  font-family: "New Amsterdam", sans-serif; 
   background-color: var(--background);
   transition: all 0.3s ease-in-out;
-  font-size: 2rem;
+  font-size: 3rem;
   color:var(--textColour);
 }
 
@@ -76,3 +81,24 @@ button:hover::before {
   transform: scaleX(1);
 }
 
+img{
+  width:45% ;
+  height: 45%;
+  transition: transform 0.3s ease;
+}
+
+img:hover{
+  transform: scale(1.05);
+}
+
+#content{
+  display: flex;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-size: 4rem;
+  margin-top: 6%;
+}
