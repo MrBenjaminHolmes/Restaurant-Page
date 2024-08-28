@@ -283,7 +283,7 @@ footer {
 .tacoMenu{
   margin-top: 20%;
   margin-bottom: 30px;
-  width:22vmax ;
+  width:20vmax ;
   height: 14vmax ;
 }
 
@@ -291,4 +291,46 @@ footer {
   width:17vmax ;
   height: 17vmax ;
   margin: 25px;
+}
+
+
+#about {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-color: var(--textColour);
+  border-radius: 15px;
+  margin: 100px auto; 
+  padding: 20px; 
+  max-width: 1200px; 
+  gap: 20px; 
+  transition: all 0.3s ease;
+}
+
+#about > div {
+  text-align: center; 
+}
+
+#about > div > h2 {
+  font-family: "Matemasie", sans-serif;
+  font-size: calc(1.5rem + 1vw); 
+  color: var(--background);
+  margin: 0; 
+}
+
+#about > div > svg {
+  width: 10vw;
+  height: auto; 
+  fill: var(--background);
+  max-width: 80px; 
+}
+
+#about > div > p {
+  color: #979797;
+  margin: 0; 
+}
+
+#about:hover{
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(20, 20, 20, 0.521), 0 6px 20px 0 rgba(0, 0, 0, 0.521);
 }

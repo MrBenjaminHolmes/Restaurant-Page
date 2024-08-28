@@ -2,6 +2,7 @@ import burgerImg from '../images/burger.png';
 import tacoImg from '../images/Taco.png';
 import chipsImg from '../images/chips.png';
 import renderMenu from './Menu';
+import renderAbout from './about';
 
 
 export default function renderHomepage(){
@@ -33,5 +34,6 @@ export default function renderHomepage(){
     burgerImage.src = burgerImg;
 
     renderMenu();
+    renderAbout();
 
 }

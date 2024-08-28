@@ -17,7 +17,7 @@ export  default function renderFooter(){
             <div class="contact">
                 <h2>Contact Us</h2>
                 <ul>
-                    <li>Phone:  +1 (915) 490-7583</li>
+                    <li>Phone:  +123 456 789</li>
                     <li>Email:  Quickbites@gmail.com</li>
                     <li>Address:  169 Bradford Road, Winsley,BA15 2HW</li>
                   </ul> 
