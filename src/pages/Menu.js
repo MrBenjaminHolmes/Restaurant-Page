@@ -7,9 +7,8 @@ import Milkshake from "../images/Milkshake.png";
 import Doughnut from "../images/Doughnut.png";
 
 export default function renderMenu() {
-    const content = document.querySelector("#content");
+    const content = document.querySelector("#menu");
 
-    // Create the menu HTML structure
     const menuHTML = `
         <div class="grid">
             <div class="card">
@@ -139,7 +138,5 @@ export default function renderMenu() {
             </div>
         </div>
     `;
-
-    // Inject the HTML into the content div
     content.innerHTML = menuHTML;
 }

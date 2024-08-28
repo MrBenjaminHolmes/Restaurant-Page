@@ -1,6 +1,7 @@
 import burgerImg from '../images/burger.png';
 import tacoImg from '../images/Taco.png';
 import chipsImg from '../images/chips.png';
+import renderMenu from './Menu';
 
 
 export default function renderHomepage(){
@@ -30,5 +31,7 @@ export default function renderHomepage(){
     const burgerImage = document.createElement("img");
     content.appendChild(burgerImage);
     burgerImage.src = burgerImg;
+
+    renderMenu();
 
 }
