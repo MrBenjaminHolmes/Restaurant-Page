@@ -1,9 +1,10 @@
 import "./styles.css";
 import renderHomepage from "./pages/homePage.js";
 import renderFooter from "./pages/footer.js"
+import renderMenu from "./pages/Menu.js";
 
 const homeBtn = document.querySelectorAll("button")[0];
-
+const menuBtn = document.querySelectorAll("button")[1];
 
 
 function clearContent() {
@@ -14,7 +15,7 @@ function clearContent() {
 }
 
 
-//renderHomepage();
+renderHomepage();
 renderFooter();
 
 homeBtn.addEventListener("click",()=>{
@@ -23,3 +24,7 @@ homeBtn.addEventListener("click",()=>{
 })
 
 
+menuBtn.addEventListener("click",()=>{
+    clearContent()
+    renderMenu();
+})
