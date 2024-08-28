@@ -2,6 +2,10 @@ import "./styles.css";
 import renderHomepage from "./pages/homePage.js";
 import renderFooter from "./pages/footer.js"
 
+const homeBtn = document.querySelectorAll("button")[0];
+
+
+
 function clearContent() {
     // const content = document.querySelector("#content");
     while(content.firstChild) { 
@@ -10,18 +14,12 @@ function clearContent() {
 }
 
 
-
-
-renderHomepage();
+//renderHomepage();
 renderFooter();
 
-
-// import burger from './images/burger.png';
-
-   
-// const image = document.createElement("img");
-// image.src = burger;
-   
-// document.body.appendChild(image);
+homeBtn.addEventListener("click",()=>{
+    clearContent()
+    renderHomepage();
+})
 
 
